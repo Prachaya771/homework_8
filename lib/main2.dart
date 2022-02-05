@@ -152,12 +152,13 @@ class _HomePageState extends State<HomePage> {
                     setState(() {
                       if (a ==1) {//>
                         _output = "$_input : มากเกินไป";
+                        _input = "";
                       } else if (a==-1) {//<
                         _output = "$_input : น้อยเกินไป";
+                        _input = "";
                       } else {//==
                         _output = "$_input : ถูกต้อง(ทาย ${game.guessCount} ครั้ง)";
                       }
-                      _input = "";
                     });
 
                   },

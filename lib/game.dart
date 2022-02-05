@@ -9,6 +9,7 @@ class Game {
   Game({int maxRandom = defaultMaxRandom}) {
     var r = Random();
     _answer = r.nextInt(maxRandom) + 1;
+    print(_answer);
   }
 
   int get guessCount {
